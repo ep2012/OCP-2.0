@@ -15,25 +15,18 @@ using System.Windows.Shapes;
 namespace OCP_2._0
 {
     /// <summary>
-    /// Interaction logic for Menu.xaml
+    /// Interaction logic for AddUser.xaml
     /// </summary>
-    public partial class Menu : Window
+    public partial class AddUser : Window
     {
-        public Menu()
+        public AddUser()
         {
             InitializeComponent();
-            lblDate.Content = DateTime.Today.ToLongDateString();
-            lblUsername.Content = "Logged in as: " + Environment.UserName;
         }
 
-        private void btnExit_Click(object sender, RoutedEventArgs e)
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
-        }
-
-        private void btnAddNewUser_Click(object sender, RoutedEventArgs e)
-        {
-            AddUser win = new AddUser();
+            Menu win = new Menu();
             win.Left = this.Left;
             win.Top = this.Top;
             win.Show();

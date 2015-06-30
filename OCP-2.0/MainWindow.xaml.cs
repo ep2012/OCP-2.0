@@ -24,9 +24,11 @@ namespace OCP_2._0
         {
             InitializeComponent();
         }
-        private void btnAgree_Click(object sender, RoutedEventArgs e)
+        private void btnAccept_Click(object sender, RoutedEventArgs e)
         {
             Menu win = new Menu();
+            win.Left = this.Left;
+            win.Top = this.Top;
             win.Show();
 
             this.Close();
