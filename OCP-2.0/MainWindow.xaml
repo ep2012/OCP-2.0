@@ -1,7 +1,7 @@
 ﻿<Window x:Class="OCP_2._0.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Confidentiality Agreement" Height="350" Width="300" Background="Black" FontFamily="Century Schoolbook">
+        Title="Confidentiality Agreement" Height="350" Width="300" Background="Black" FontFamily="Century Schoolbook" Left="0" Top="0">
     <Grid>
         <Button x:Name="btnAccept" Content="Accept" HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" Width="75" Click="btnAccept_Click" FontSize="20"/>
         <Button x:Name="btnDecline" Content="Decline" HorizontalAlignment="Left" Margin="197,267,0,0" VerticalAlignment="Top" Width="75" Click="btnDecline_Click" FontSize="20"/>

@@ -39,5 +39,14 @@ namespace OCP_2._0
             win.Show();
             this.Close();
         }
+
+        private void btnOneContractPerPage_Click(object sender, RoutedEventArgs e)
+        {
+            Contracts win = new Contracts();
+            win.Left = this.Left;
+            win.Top = this.Top;
+            win.Show();
+            this.Close();
+        }
     }
 }
