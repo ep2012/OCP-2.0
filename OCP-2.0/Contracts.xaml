@@ -4,7 +4,6 @@
         Title="Contracts" Height="1000" Width="1000" Background="#FFFFE86F" FontSize="18" FontFamily="Century Schoolbook">
     <Grid>
         <Label Content="Contracts" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25" BorderBrush="White" BorderThickness="1" FontWeight="Bold" Foreground="White" Background="Black" Opacity="0.66" Width="962" Margin="10,10,0,0"/>
-
         <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="646" Margin="10,294,0,0" VerticalAlignment="Top" Width="962" Background="Black" Opacity="0.66">
             <TabControl Margin="9,9,9,58">
                 <TabItem Header="General">
