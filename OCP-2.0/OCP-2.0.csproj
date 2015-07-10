@@ -72,6 +72,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ComboBoxContents.cs" />
     <Compile Include="Contract.cs" />
     <Compile Include="Contracts.xaml.cs">
       <DependentUpon>Contracts.xaml</DependentUpon>
