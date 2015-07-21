@@ -18,7 +18,7 @@ namespace OCP_2._0
         {
             ids = new List<object>();
             index = 0;
-            new idMaker("SELECT CONTRACT_ID FROM [REVINT].[dbo].[OCP_Contracts] ORDER BY CONTRACT_ID", ids);
+            new idMaker("SELECT CONTRACT_ID FROM [REVINT].[dbo].[OCP_Contracts] ORDER BY CLIENT", ids);
             length = ids.Count;
             if (length > 0)
             {
@@ -75,18 +75,15 @@ namespace OCP_2._0
 
                 OdbcDataReader reader = commandID.ExecuteReader();
 
-                if (reader.Read())
+                while (reader.Read())
                 {
-                    do
-                    {
-                        int numCols = reader.GetValues(objID);
+                    int numCols = reader.GetValues(objID);
 
-                        for (int i = 0; i < numCols; i++)
-                        {
-                            ids.Add(objID[i]);
-                        }
-                    } while (reader.Read());
-                }
+                    for (int i = 0; i < numCols; i++)
+                    {
+                        ids.Add(objID[i]);
+                    }
+                } 
             }
         }
     }
@@ -112,19 +109,16 @@ namespace OCP_2._0
                 OdbcDataReader reader = command.ExecuteReader();
                 OdbcDataReader reader2 = commandID.ExecuteReader();
 
-                if (reader.Read() && reader2.Read())
+                while (reader.Read() && reader2.Read())
                 {
-                    do
-                    {
-                        int numCols = reader.GetValues(obj);
-                        numCols = reader2.GetValues(objID);
+                    int numCols = reader.GetValues(obj);
+                    numCols = reader2.GetValues(objID);
 
-                        for (int i = 0; i < numCols; i++)
-                        {
-                            dictionary.Add(obj[i].ToString(), objID[i].ToString());
-                            comboClass.Add(obj[i].ToString());
-                        }
-                    } while (reader.Read() && reader2.Read());
+                    for (int i = 0; i < numCols; i++)
+                    {
+                        dictionary.Add(obj[i].ToString(), objID[i].ToString());
+                        comboClass.Add(obj[i].ToString());
+                    }
                 }
             }
 
