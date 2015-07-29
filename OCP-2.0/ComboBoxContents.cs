@@ -36,11 +36,6 @@ namespace OCP_2._0
 
             var itemsToRemove = this.ToList();
 
-            foreach (var itemToRemove in itemsToRemove)
-            {
-                Remove(itemsToRemove.ToString());
-            }
-
             foreach (object status in titleIDs)
             {
                 Add(status.ToString());
@@ -87,13 +82,13 @@ namespace OCP_2._0
     {
         public ReimbursementPeriods()
         {
-            Add("Per Hour");
-            Add("Per Day");
-            Add("Per Month");
-            Add("Per Year");
-            Add("Per Session");
-            Add("Per Procedure");
-            Add("Other");
+            Add("Per Hour".ToUpper());
+            Add("Per Day".ToUpper());
+            Add("Per Month".ToUpper());
+            Add("Per Year".ToUpper());
+            Add("Per Session".ToUpper());
+            Add("Per Procedure".ToUpper());
+            Add("Other".ToUpper());
         }
     }
 

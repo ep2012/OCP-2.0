@@ -468,7 +468,7 @@ namespace OCP_2._0
 
             using (OdbcConnection connectionID = new OdbcConnection(cxnString))
             {
-                OdbcCommand commandID = new OdbcCommand(@sqlCmdID, connectionID);
+                OdbcCommand commandID = new OdbcCommand(sqlCmdID, connectionID);
 
                 connectionID.Open();
 
@@ -480,7 +480,7 @@ namespace OCP_2._0
 
                     for (int i = 0; i < numCols; i++)
                     {
-                        ids.Add(objID[i]);
+                        ids.Add((object)objID[i].ToString().ToUpper());
                     }
                 } 
             }
