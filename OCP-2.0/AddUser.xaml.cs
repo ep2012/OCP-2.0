@@ -51,7 +51,17 @@ namespace OCP_2._0
                 else
                 {
                     //not successful
+                    var dialogBox = MessageBox.Show("A user with the given Healthcare Id already exists. " +
+                        "Create a different user or contact a programmer for more assistance.",
+                        "Unsuccessful Database Insertion");
                 }
+            }
+            else
+            {
+                var dialogBox = MessageBox.Show("The given information is not valid to insert into the database. " +
+                        "Check that the name and Healthcare Id fields are filled properly. " + 
+                        "If this problem persists, contact a programmer for further assistance.",
+                        "Invalid Entry");
             }
         }
         private bool isFormValid()
