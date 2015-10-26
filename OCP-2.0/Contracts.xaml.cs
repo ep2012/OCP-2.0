@@ -163,6 +163,7 @@ namespace OCP_2._0
             }
             else
             {
+
                 imgTypeofService.Visibility = Visibility.Hidden;
             }
         }
