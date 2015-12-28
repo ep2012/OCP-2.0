@@ -6,6 +6,6 @@
         <Button x:Name="btnAccept" Content="Accept" HorizontalAlignment="Left" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Margin="10,267,0,0" VerticalAlignment="Top" Width="100" Click="btnAccept_Click" FontSize="20" Background="White" BorderBrush="Black" Opacity="0.66"/>
         <Button x:Name="btnDecline" Content="Decline" HorizontalAlignment="Left" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Margin="175,267,0,0" VerticalAlignment="Top" Width="97" Click="btnDecline_Click" FontSize="20" Background="White" BorderBrush="Black" Opacity="0.66"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,134,0,0" TextWrapping="Wrap" Text="This session is recorded and confidential. All information is proprietary. By clicking the 'Accept' button, you agree to these terms." VerticalAlignment="Top" Width="262" FontSize="18" Foreground="Black" FontStyle="Italic"/>
-        <Image HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="262" Source="c:\users\eliprice\documents\visual studio 2013\Projects\OutsideClinicalPractice\OutsideClinicalPractice\university-of-iowa-hospitals-and-clinics-logo.ico"/>
+        <Image x:Name="imgHeader" HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="262" Source="university-of-iowa-hospitals-and-clinics-logo.ico"/>
     </Grid>
 </Window>
